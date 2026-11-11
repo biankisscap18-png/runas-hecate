@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#0e0816">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Runas de Hécate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Runas de Hécate</h1>
+      <p class="sub">Dibuja la runa con tu varita y descubre cuánto se parece a la original.</p>
+    </header>
+
+    <section class="play">
+      <div class="stage">
+        <div class="top">
+          <div class="title">
+            <h2 id="rune-title"></h2>
+            <span id="best" class="best"></span>
+          </div>
+          <button id="open-picker" class="model" type="button" aria-haspopup="dialog" aria-label="Elegir otra runa">
+            <i id="pick-icon"></i><span>Elegir<span class="lg"> runa</span></span>
+          </button>
+          <button id="view-rune" class="model" type="button" aria-label="Ver la runa modelo">
+            <i id="model-icon"></i><span>Ver runa</span>
+          </button>
+          <button id="btn-eval" class="main" type="button">Evaluar</button>
+        </div>
+
+        <div class="board" id="board">
+          <div id="peek" aria-hidden="true"></div>
+          <canvas id="draw" aria-label="Pizarra para dibujar la runa"></canvas>
+          <canvas id="fx"></canvas>
+          <svg id="wand" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true">
+            <line x1="8" y1="56" x2="58" y2="6" stroke-width="3.5"/>
+            <line x1="16" y1="48" x2="24" y2="40" stroke-width="5" opacity=".5"/>
+            <g stroke-width="1.6"><line x1="5" y1="59" x2="1" y2="63"/><line x1="4" y1="52" x2="0" y2="52"/><line x1="12" y1="60" x2="12" y2="64"/></g>
+            <circle cx="6" cy="58" r="2.6" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+
+        <div class="bottom">
+          <div class="pens" role="group" aria-label="Grosor de la varita">
+            <button type="button" data-w="0.006" aria-pressed="false">Delgado</button>
+            <button type="button" data-w="0.012" aria-pressed="true">Medio</button>
+            <button type="button" data-w="0.022" aria-pressed="false">Grueso</button>
+          </div>
+          <div class="actions">
+            <button type="button" id="btn-peek" aria-label="Ver la runa en la pizarra durante 5 segundos">Ver 5 s</button>
+            <button id="btn-clear" type="button">Borrar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="res" aria-live="polite">
+        <div id="pct">—</div>
+        <p id="msg">Dibuja la runa y pulsa Evaluar.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="picker" aria-labelledby="picker-title">
+    <div class="picker-head">
+      <h2 id="picker-title">Elige una runa</h2>
+      <button id="picker-close" type="button" aria-label="Cerrar">Cerrar</button>
+    </div>
+    <div class="grid" id="rune-grid"></div>
+  </dialog>
+
+  <dialog id="viewer">
+    <div class="big" id="big-icon"></div>
+    <p id="big-name"></p>
+    <button id="viewer-close" type="button">Cerrar</button>
+  </dialog>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

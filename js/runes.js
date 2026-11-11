@@ -1,0 +1,23 @@
+// Datos de las runas. Cada archivo es una máscara PNG (trazo opaco, fondo transparente).
+export const RUNES = [
+  { id: 'luz', name: 'Luz', title: 'Runa de Luz', file: 'assets/runes/luz.png' },
+  { id: 'fuego', name: 'Fuego', title: 'Runa de Fuego', file: 'assets/runes/fuego.png' },
+  { id: 'viento', name: 'Viento', title: 'Runa de Viento', file: 'assets/runes/viento.png' },
+  { id: 'agua', name: 'Agua', title: 'Runa de Agua', file: 'assets/runes/agua.png' },
+  { id: 'electricidad', name: 'Electricidad', title: 'Runa de Electricidad', file: 'assets/runes/electricidad.png' },
+  { id: 'tierra', name: 'Tierra', title: 'Runa de Tierra', file: 'assets/runes/tierra.png' },
+  { id: 'hombre', name: 'Hombre', title: 'Runa del Hombre', file: 'assets/runes/hombre.png' },
+  { id: 'mujer', name: 'Mujer', title: 'Runa de la Mujer', file: 'assets/runes/mujer.png' },
+  { id: 'caballero', name: 'Caballero', title: 'Runa del Caballero', file: 'assets/runes/caballero.png' },
+  { id: 'rey', name: 'Rey', title: 'Runa del Rey', file: 'assets/runes/rey.png' },
+  { id: 'reina', name: 'Reina', title: 'Runa de la Reina', file: 'assets/runes/reina.png' },
+  { id: 'amantes', name: 'Amantes', title: 'Runa de los Amantes', file: 'assets/runes/amantes.png' },
+  { id: 'estrella', name: 'Estrella', title: 'Runa de la Estrella', file: 'assets/runes/estrella.png' },
+  { id: 'enfermedad', name: 'Enfermedad', title: 'Runa de la Enfermedad', file: 'assets/runes/enfermedad.png' },
+  { id: 'valentia', name: 'Valentía', title: 'Runa de la Valentía', file: 'assets/runes/valentia.png' },
+  { id: 'mente', name: 'Mente', title: 'Runa de la Mente', file: 'assets/runes/mente.png' },
+  { id: 'atenea', name: 'Atenea', title: 'Runa de Atenea', file: 'assets/runes/atenea.png' },
+  { id: 'ares', name: 'Ares', title: 'Runa de Ares', file: 'assets/runes/ares.png' },
+  { id: 'apolo', name: 'Apolo', title: 'Runa de Apolo', file: 'assets/runes/apolo.png' },
+  { id: 'nyx', name: 'Nyx', title: 'Runa de Nyx', file: 'assets/runes/nyx.png' },
+];

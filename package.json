@@ -1,0 +1,10 @@
+{
+  "name": "runas-hecate",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Juego de dibujo de las Runas de Hécate con porcentaje de parecido.",
+  "scripts": {
+    "start": "npx serve . -l 5173"
+  }
+}
